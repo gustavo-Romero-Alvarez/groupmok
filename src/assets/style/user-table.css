@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+button {
+    background-color: #bcbbb6; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19); /* Sombra */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #598be1;
+}
+
+thead > tr > th {font-weight: 600;}
+   
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #b6c7e3;
+}
+
+table tr:nth-child(odd):not(thead tr:first-child) {
+    background-color: #9aabd1;
+}
+
+table tr > td {
+    color:#f9f9f9
+}
+
+.btn-delete {
+    background-color: #cf5c5c; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19); /* Sombra */
+}
+
+.btn-delete:hover {
+    background-color: #ca2d2d; /* Color de fondo al pasar el mouse */
+}
+   
+.btn-delete:focus {
+    outline: none; /* Quitar el borde de enfoque predeterminado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Agregar una sombra al enfocar */
+}
+
+
+
+@media (max-width: 768px) {
+    table th, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        border-bottom: 1px solid #ddd;
+    }
+}
